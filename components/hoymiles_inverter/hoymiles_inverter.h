@@ -4,7 +4,7 @@
 #include "esphome/core/application.h"
 #include "esphome/components/binary_sensor/binary_sensor.h"
 
-#include <Hoymiles.h>
+#include <../../lib/OpenDTU/lib/Hoymiles/src/Hoymiles.h>
 #include <Print.h>
 
 
