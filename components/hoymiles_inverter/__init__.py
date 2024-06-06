@@ -135,7 +135,7 @@ async def to_code(config):
 
     cg.add_library("SPI", None)
 
-    cg.add_library("Frozen", None, "file://../../lib/OpenDTU/lib/Frozen")
+    cg.add_library("Frozen", None, "file://lib/OpenDTU/lib/Frozen")
     cg.add_library("Every", None, "file://../../lib/OpenDTU/lib/Every")
     cg.add_library("ThreadSafeQueue", None, "file://../../lib/OpenDTU/lib/ThreadSafeQueue")
     cg.add_library("TimeoutHelper", None, "file://../../lib/OpenDTU/lib/TimeoutHelper")
