@@ -134,14 +134,14 @@ async def to_code(config):
 
 
     cg.add_library("SPI", None)
-    cg.add_library("Frozen", None, "https://github.com/tbnobody/OpenDTU/")   
-#    cg.add_library("Frozen", None, "https://github.com/tbnobody/OpenDTU/lib/OpenDTU/lib/Frozen")
-#    cg.add_library("Every", None, "https://github.com/tbnobody/OpenDTU//lib/OpenDTU/lib/Every")
-#    cg.add_library("ThreadSafeQueue", None, "https://github.com/tbnobody/OpenDTU/lib/OpenDTU/lib/ThreadSafeQueue")
-#    cg.add_library("TimeoutHelper", None, "https://github.com/tbnobody/OpenDTU/lib/OpenDTU/lib/TimeoutHelper")
-#    cg.add_library("CMT2300a", None, "https://github.com/tbnobody/OpenDTU/lib/OpenDTU/lib/CMT2300a")
-    
-    cg.add_library("Hoymiles", None, "https://github.com/tbnobody/OpenDTU/lib/OpenDTU/lib/Hoymiles")
+
+    cg.add_library("Frozen", None, "file://../../../lib/OpenDTU/lib/Frozen")
+    cg.add_library("Every", None, "file://../../../lib/OpenDTU/lib/Every")
+    cg.add_library("ThreadSafeQueue", None, "file://../../../lib/OpenDTU/lib/ThreadSafeQueue")
+    cg.add_library("TimeoutHelper", None, "file://../../../lib/OpenDTU/lib/TimeoutHelper")
+    cg.add_library("CMT2300a", None, "file://../../../lib/OpenDTU/lib/CMT2300a")
+    cg.add_library("SPI", None)
+    cg.add_library("Hoymiles", None, "file://../../../lib/OpenDTU/lib/Hoymiles")
 
     var = cg.new_Pvariable(config[CONF_ID])
 
