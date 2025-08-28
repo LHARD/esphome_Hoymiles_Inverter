@@ -131,8 +131,6 @@ async def to_code(config):
     cg.add_build_flag("-std=gnu++17")
     cg.add_build_flag("-fexceptions")
     cg.add_platformio_option("build_unflags", ["-std=gnu++11", "-fno-exceptions"])
-    cg.add_library("SPI", None)
-    cg.add_library("OpenDTU", None, "https://github.com/tbnobody/OpenDTU.git")
 
     var = cg.new_Pvariable(config[CONF_ID])
 
