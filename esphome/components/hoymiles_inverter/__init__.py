@@ -1,4 +1,4 @@
-from esphome import pins
+DTUfrom esphome import pins
 import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.components import number, binary_sensor, sensor
@@ -132,11 +132,8 @@ async def to_code(config):
     cg.add_build_flag("-fexceptions")
     cg.add_platformio_option("build_unflags", ["-std=gnu++11", "-fno-exceptions"])
     cg.add_library("SPI", None)
-    cg.add_library("Hoymiles", None, "https://github.com/tbnobody/OpenDTU/lib/Hoymiles")
-    cg.add_library("Frozen", None, "https://github.com/tbnobody/OpenDTU/lib/Frozen")
-    cg.add_library("ThreadSafeQueue", None, "https://github.com/tbnobody/OpenDTU/lib/ThreadSafeQueue")
-    cg.add_library("TimeoutHelper", None, "https://github.com/tbnobody/OpenDTU/lib/TimeoutHelper")
-    cg.add_library("CMT2300A", None, "https://github.com/tbnobody/OpenDTU/lib/CMT2300a")
+    cg.add_library("OpenDTU", None, "https://github.com/tbnobody/OpenDTU.git")
+
     var = cg.new_Pvariable(config[CONF_ID])
 
     for inv_conf in config[CONF_INVERTERS]:
